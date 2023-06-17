@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        /* width: 400px; */
+        /* height: 400px; */
+        /* background-color: red; */
+        /* transform: rotate(40deg); */
+        /* transform: scale(1.1); */
+        /* transform: skew(20deg,50deg); */
+        /* transform:translate(40px) ; */
+    }
+
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(228, 166, 50);
+        transition: width 2s;
+        margin-bottom: 20px;
+
+    }
+
+    .box:hover {
+        width: 400px;
+    }
+
+    .ease {
+        transition-timing-function: ease;
+    }
+
+    .linear {
+        transition-timing-function: linear;
+    }
+
+    .ease-in {
+        transition-timing-function: ease-in;
+    }
+
+    .ease-in-out {
+        transition-timing-function: ease-in-out;
+    }
+</style>
+
+<body>
+
+    <div class="box Ease">
+        Ease-effektimiz sekin boshlanib,keyin tezlashib va yana sekinlik bilan tygaydi.
+    </div>
+    <div class="box liner">
+        Linear-efektimiz ko'rsatilgan vaqt davomida bir xil tezlikga ega bo'ladi
+    </div>
+    <div class="box ease-in">Ease in-effektimiz sekin boshlanadi</div>
+    <div class="box ease-in-out">Ease-out-effektimiz sekin tugiydi</div>
+    <div class="box ease-in-out">
+        Ease-in-out-effektimiz sekin boshlanib va sekin tugiydi
+    </div>
+
+
+</body>
+
+</html>
